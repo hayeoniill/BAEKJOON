@@ -1,13 +1,25 @@
 import java.util.Scanner;
 
-  public class Main {
+public class Main {
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-		int t = s.nextInt();
-		for(int i=0; i<t; i++) {
-			String word = s.next();
-			System.out.println(word.charAt(0)+""+word.charAt(word.length()-1));
-		}
-		s.close();
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        for(int i=0;i<n;i++){
+            String s = sc.next();
+            if(s.length()>1){
+                System.out.print(s.charAt(0));
+                System.out.print(s.charAt(s.length()-1));
+                System.out.println();
+            }else{
+                System.out.print(s.charAt(0));
+                System.out.print(s.charAt(0));
+                System.out.println();
+
+            }
+
+        }
+
+        sc.close();
     }
 }
